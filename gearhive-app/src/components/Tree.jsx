@@ -4,7 +4,7 @@ function Tree(props) {
   return (
     <section className="tree">
       <h3>{props.name}</h3>
-      <p>{props.Description}</p>
+      <p>{props.description}</p>
       <img src={props.image} />
     </section>
   );
