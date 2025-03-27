@@ -1,11 +1,11 @@
-import "./css/Header.css";
+import "./css/Footer.css";
 
-function Header() {
+function Footer() {
   return (
-    <header>
-      <h1>Title of the Site</h1>
-    </header>
+    <footer>
+      <p>&copy;Osasuyi Agho</p>
+    </footer>
   );
 }
 
-export default Header;
+export default Footer;
