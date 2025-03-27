@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/oagho/Gearhive.app/static/css/main.5ff7f6af.css",
+    "main.js": "/oagho/Gearhive.app/static/js/main.934c4d36.js",
+    "index.html": "/oagho/Gearhive.app/index.html",
+    "main.5ff7f6af.css.map": "/oagho/Gearhive.app/static/css/main.5ff7f6af.css.map",
+    "main.934c4d36.js.map": "/oagho/Gearhive.app/static/js/main.934c4d36.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5ff7f6af.css",
+    "static/js/main.934c4d36.js"
+  ]
+}
