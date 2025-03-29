@@ -1,11 +1,13 @@
-import "./css/Footer.css";
+// Footer.jsx
+import React from "react";
+import "./CSS/Footer.css";
 
-function Footer() {
+const Footer = () => {
   return (
     <footer>
-      <p>&copy;Osasuyi Agho</p>
+      <p>&copy; 2025 Gear Hive. All rights reserved.</p>
     </footer>
   );
-}
+};
 
 export default Footer;

@@ -1,5 +1,67 @@
 header {
-  background: lightpink;
-  text-align: center;
-  padding: 10px;
+  background-color: var(--header-background);
+  color: var(--header-text-color);
+  padding: 2.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--header-text-color);
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  color: var(--header-text-color);
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: none;
+}
+
+.navigation {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-toggle:hover {
+  color: var(--secondary-color);
+}
+
+@media (max-width: 1000px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .navigation {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--header-background);
+    text-align: center;
+  }
+
+  .navigation.active {
+    display: flex;
+  }
+
+  .navigation a {
+    padding: 1rem;
+    margin: 0.5rem 0;
+    color: var(--header-text-color);
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+  }
+
+  .navigation a:hover {
+    background-color: var(--secondary-color);
+    color: white;
+  }
 }

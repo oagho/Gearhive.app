@@ -1,5 +1,7 @@
-Footer {
-  background: lightpink;
+footer {
   text-align: center;
-  padding: 10px;
+  padding: 1rem;
+  background-color: var(--header-background);
+  color: var(--header-text-color);
+  margin-top: auto;
 }

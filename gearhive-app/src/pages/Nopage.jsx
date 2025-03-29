@@ -1,11 +1,20 @@
-import "./css/Nopage.css";
+import React from "react";
+import "../pages/CSS/Nopage.css";
 
-function Nopage() {
+const Nopage = () => {
   return (
-    <>
-      <h1>Sorry, we can't find your page</h1>
-    </>
+    <div>
+      <main>
+        <section className="nopage">
+          <h1>404 - Page Not Found</h1>
+          <p>Sorry, the page you are looking for does not exist.</p>
+          <a href="/" className="btn">
+            Go Back Home
+          </a>
+        </section>
+      </main>
+    </div>
   );
-}
+};
 
 export default Nopage;
