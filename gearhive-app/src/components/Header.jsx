@@ -1,3 +1,4 @@
+// Updated Header.jsx
 import React, { useState } from "react";
 import Navigation from "../components/Navigation";
 import "./CSS/Header.css";
@@ -6,7 +7,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    setIsMenuOpen((prev) => !prev);
   };
 
   return (
@@ -15,9 +16,7 @@ const Header = () => {
       <button className="menu-toggle" onClick={toggleMenu}>
         {isMenuOpen ? "✖" : "☰"}
       </button>
-      <nav className={`navigation ${isMenuOpen ? "active" : ""}`}>
-        <Navigation />
-      </nav>
+      <Navigation toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
     </header>
   );
 };

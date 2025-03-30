@@ -20,23 +20,6 @@ body {
   min-height: 100vh;
 }
 
-header {
-  background-color: var(--header-background);
-  color: var(--header-text-color);
-  padding: 2.5rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
-
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: var(--header-background);
-  color: var(--header-text-color);
-}
-
 .btn {
   display: inline-block;
   padding: 0.75rem 1.5rem;

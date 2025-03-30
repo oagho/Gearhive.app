@@ -23,15 +23,6 @@ header {
   display: none;
 }
 
-.navigation {
-  display: flex;
-  gap: 1rem;
-}
-
-.nav-toggle:hover {
-  color: var(--secondary-color);
-}
-
 @media (max-width: 1000px) {
   .menu-toggle {
     display: block;
@@ -46,22 +37,10 @@ header {
     right: 0;
     background-color: var(--header-background);
     text-align: center;
+    z-index: 1000;
   }
 
-  .navigation.active {
-    display: flex;
-  }
-
-  .navigation a {
-    padding: 1rem;
-    margin: 0.5rem 0;
-    color: var(--header-text-color);
-    text-decoration: none;
-    transition: background 0.3s, color 0.3s;
-  }
-
-  .navigation a:hover {
-    background-color: var(--secondary-color);
-    color: white;
+  .active {
+    display: flex !important;
   }
 }

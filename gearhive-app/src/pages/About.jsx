@@ -5,7 +5,15 @@ const About = () => {
   return (
     <div>
       <main>
-        <section className="about">
+        <section class="hero about-hero">
+          <div class="about-hero-text">
+            <h1>About Gear Hive</h1>
+            <p>
+              Behind every great tool is a hardworking team. Here's our story.
+            </p>
+          </div>
+        </section>
+        <section class="about">
           <h1>About Gear Hive</h1>
           <p>
             Gear Hive is a trusted provider of high-quality tools and equipment
@@ -14,8 +22,8 @@ const About = () => {
             customers to complete any project with confidence.
           </p>
 
-          <div className="about-grid">
-            <div className="about-content">
+          <div class="about-grid">
+            <div class="about-content">
               <h2>Our Story</h2>
               <p>
                 Founded in 2025, Gear Hive was built on a passion for
@@ -28,7 +36,7 @@ const About = () => {
                 industry standards while maintaining affordability.
               </p>
             </div>
-            <div className="about-image">
+            <div class="about-image">
               <img src="images/con1.jpg" alt="About Gear Hive" />
             </div>
           </div>
@@ -46,6 +54,7 @@ const About = () => {
             <li>Fast and reliable shipping</li>
             <li>Extensive selection of tools for all industries</li>
           </ul>
+
           <h2>Vision & Mission</h2>
           <p>
             <strong>Our Vision:</strong> To become the most innovative and
@@ -128,6 +137,7 @@ const About = () => {
             "We don't just build tools — we build trust, reliability, and a
             legacy of craftsmanship." – Gear Hive Founders
           </blockquote>
+
           <h2>Meet Our Founders</h2>
           <div class="founders">
             <div class="founder">

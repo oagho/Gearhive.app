@@ -1,3 +1,28 @@
+.about-hero {
+  background-image: url("../images/about-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+/* Remove bullet points from all lists within the About section */
+.about ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 5px;
+}
+
 .about {
   text-align: center;
   margin: 2rem auto;
@@ -8,23 +33,19 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.about-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-  align-items: center;
+.about h2 {
+  margin-top: 1.5rem;
+  font-size: 1.8rem;
 }
 
-.about-content {
-  flex: 1;
-  min-width: 300px;
+.timeline {
+  list-style: none;
+  padding: 0;
 }
 
-.about-image img {
-  width: 100%;
-  max-width: 500px;
-  border-radius: 5px;
+.timeline li {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
 }
 
 .founders {
@@ -48,4 +69,14 @@
   height: auto;
   border-radius: 50%;
   max-width: 150px;
+  margin-bottom: 1rem;
+}
+
+.founder h3 {
+  margin: 0.5rem 0;
+}
+
+.founder p {
+  font-style: italic;
+  color: #555;
 }

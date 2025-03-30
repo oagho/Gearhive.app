@@ -1,3 +1,4 @@
+// Updated Cart.jsx with Improved Validation and Feedback
 import React, { useState, useEffect } from "react";
 import "../pages/CSS/Cart.css";
 
@@ -20,26 +21,35 @@ const Cart = () => {
   };
 
   const updateQuantity = (index, quantity) => {
+    if (quantity < 1) {
+      alert("Quantity must be at least 1");
+      return;
+    }
     const newCart = [...cart];
     newCart[index].quantity = quantity;
-    if (quantity <= 0) newCart.splice(index, 1);
     setCart(newCart);
     localStorage.setItem("cart", JSON.stringify(newCart));
     updateTotal(newCart);
+    alert("Item quantity updated");
   };
 
   const removeItem = (index) => {
+    if (!window.confirm("Are you sure you want to remove this item?")) return;
     const newCart = [...cart];
     newCart.splice(index, 1);
     setCart(newCart);
     localStorage.setItem("cart", JSON.stringify(newCart));
     updateTotal(newCart);
+    alert("Item removed");
   };
 
   const clearCart = () => {
+    if (!window.confirm("Are you sure you want to clear the entire cart?"))
+      return;
     setCart([]);
     setTotal(0);
     localStorage.removeItem("cart");
+    alert("Cart cleared");
   };
 
   return (
@@ -61,7 +71,7 @@ const Cart = () => {
                     value={item.quantity}
                     min="1"
                     onChange={(e) =>
-                      updateQuantity(index, parseInt(e.target.value))
+                      updateQuantity(index, parseInt(e.target.value) || 1)
                     }
                   />
                   <button onClick={() => removeItem(index)} className="btn">
