@@ -1,22 +1,16 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./CSS/ProductCard.css";
+const ProductCard = ({ product, addToCart }) => {
+  const imageSrc = `https://gearhiveserver.onrender.com${product.image}`;
 
-const ProductCard = ({ product, showCartButton }) => {
   return (
     <div className="product">
-      <img src={product.image} alt={product.name} />
+      <img src={imageSrc} alt={product.name} />
       <h3>{product.name}</h3>
-      <p>${product.price.toFixed(2)}</p>
-      {showCartButton ? (
-        <Link to="/cart" className="btn">
-          Add to Cart
-        </Link>
-      ) : (
-        <Link to="/shop" className="btn">
-          View More
-        </Link>
-      )}
+      <p>
+        ${typeof product.price === "number" ? product.price.toFixed(2) : "N/A"}
+      </p>
+      <button onClick={() => addToCart(product)} className="btn">
+        Add to Cart
+      </button>
     </div>
   );
 };

@@ -44,3 +44,32 @@
   background-color: var(--button-hover);
   color: white;
 }
+/* Blog Post Styling with Image on the Side */
+.blog-post {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: white;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post img {
+  width: 30%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.blog-post-content {
+  flex: 1;
+}
+
+.blog-post h2 {
+  color: var(--primary-color);
+}
+
+.blog-post p {
+  color: var(--text-color);
+}

@@ -1,4 +1,3 @@
-// Updated Home.jsx with Correct State Initialization for Featured Products
 import React, { useEffect, useState } from "react";
 import "../pages/CSS/Home.css";
 
@@ -18,7 +17,7 @@ const Home = ({ interval = 5000 }) => {
     const fetchProducts = async () => {
       try {
         const response = await fetch(
-          "https://oagho.github.io/csce242/project/part6/data/products.json"
+          "https://gearhiveserver.onrender.com/api/products" // Updated URL
         );
         if (!response.ok) {
           throw new Error("Network response was not ok");
@@ -94,7 +93,7 @@ const Home = ({ interval = 5000 }) => {
               featuredProducts.map((product, idx) => (
                 <div key={idx} className="product">
                   <img
-                    src={`https://oagho.github.io/csce242/project/part6/${product.image}`}
+                    src={`https://gearhiveserver.onrender.com${product.image}`} // Updated image URL
                     alt={product.name}
                   />
                   <h3>{product.name}</h3>

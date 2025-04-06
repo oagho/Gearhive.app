@@ -22,9 +22,9 @@ const Guide = () => {
               Choosing the right tools can improve efficiency and safety on the
               job site. Learn how to select the best tools for your needs.
             </p>
-            <a role="button" className="btn">
+            <button className="btn" onClick={() => alert("Read More clicked")}>
               Read More
-            </a>
+            </button>
           </article>
 
           <article className="blog-post">
@@ -34,9 +34,9 @@ const Guide = () => {
               Safety is the top priority for any professional. Follow these ten
               essential safety tips to ensure a secure work environment.
             </p>
-            <a role="button" className="btn">
+            <button className="btn" onClick={() => alert("Read More clicked")}>
               Read More
-            </a>
+            </button>
           </article>
 
           <article className="blog-post">
@@ -46,9 +46,9 @@ const Guide = () => {
               We review the best power tools on the market and help you choose
               the best ones for your professional needs.
             </p>
-            <a role="button" className="btn">
+            <button className="btn" onClick={() => alert("Read More clicked")}>
               Read More
-            </a>
+            </button>
           </article>
         </section>
       </main>

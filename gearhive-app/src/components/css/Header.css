@@ -15,17 +15,25 @@ header {
 }
 
 .menu-toggle {
-  background: none;
+  display: none;
+  font-size: 2rem;
   border: none;
   color: var(--header-text-color);
-  font-size: 1.8rem;
   cursor: pointer;
-  display: none;
 }
 
 @media (max-width: 1000px) {
   .menu-toggle {
     display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--secondary-color);
+    color: black;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
   }
 
   .navigation {

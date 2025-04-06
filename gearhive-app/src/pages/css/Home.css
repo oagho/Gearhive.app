@@ -1,5 +1,3 @@
-/* Updated Home.css for Enhanced Slideshow and Layout */
-
 .hero {
   text-align: center;
   padding: 4rem 1rem;
@@ -43,8 +41,19 @@
 .featured-products {
   text-align: center;
   margin: 2rem 0;
+  margin: 2rem auto;
+  max-width: 80%;
+  background: white;
+  padding: 2rem;
 }
-
+.shop-by-industry {
+  text-align: center;
+  margin: 2rem 0;
+  margin: 2rem auto;
+  max-width: 80%;
+  background: white;
+  padding: 2rem;
+}
 .products-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

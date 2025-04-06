@@ -1,4 +1,6 @@
+// src/pages/Shop.jsx
 import React, { useState, useEffect } from "react";
+import ProductCard from "../components/productCard";
 import "../pages/CSS/Shop.css";
 
 const Shop = () => {
@@ -8,7 +10,7 @@ const Shop = () => {
     const fetchProducts = async () => {
       try {
         const response = await fetch(
-          "https://oagho.github.io/csce242/project/part6/data/products.json"
+          "https://gearhiveserver.onrender.com/api/products"
         );
         const data = await response.json();
         if (Array.isArray(data.products)) {
@@ -18,6 +20,7 @@ const Shop = () => {
         console.error("Error fetching products:", error);
       }
     };
+
     fetchProducts();
   }, []);
 
@@ -40,14 +43,11 @@ const Shop = () => {
           <h1>Shop Tools & Equipment</h1>
           <div className="products-grid">
             {products.map((product) => (
-              <div className="product" key={product.id}>
-                <img src={product.image} alt={product.name} />
-                <h3>{product.name}</h3>
-                <p>${product.price.toFixed(2)}</p>
-                <button onClick={() => addToCart(product)} className="btn">
-                  Add to Cart
-                </button>
-              </div>
+              <ProductCard
+                key={product.id}
+                product={product}
+                addToCart={addToCart}
+              />
             ))}
           </div>
         </section>
