@@ -1,19 +1,23 @@
 import React from "react";
+import FounderList from "../components/FounderList";
+import CustomerReviews from "../components/CustomerReviews";
+import Certifications from "../components/Certifications";
 import "../pages/CSS/About.css";
 
 const About = () => {
   return (
     <div>
       <main>
-        <section class="hero about-hero">
-          <div class="about-hero-text">
+        <section className="hero about-hero">
+          <div className="about-hero-text">
             <h1>About Gear Hive</h1>
             <p>
               Behind every great tool is a hardworking team. Here's our story.
             </p>
           </div>
         </section>
-        <section class="about">
+
+        <section className="about">
           <h1>About Gear Hive</h1>
           <p>
             Gear Hive is a trusted provider of high-quality tools and equipment
@@ -21,7 +25,6 @@ const About = () => {
             ourselves on delivering durable and reliable tools that empower our
             customers to complete any project with confidence.
           </p>
-
           <div class="about-grid">
             <div class="about-content">
               <h2>Our Story</h2>
@@ -42,11 +45,6 @@ const About = () => {
           </div>
 
           <h2>Why Choose Us?</h2>
-          <img
-            src="images/con2.jpg"
-            alt="Wide selection of tools"
-            class="about-img"
-          />
           <ul>
             <li>Superior quality tools and equipment</li>
             <li>Affordable pricing for professionals and hobbyists</li>
@@ -66,6 +64,9 @@ const About = () => {
             and safety.
           </p>
 
+          <Certifications />
+          <FounderList />
+          <CustomerReviews />
           <h2>Company Timeline</h2>
           <ul>
             <li>
@@ -89,84 +90,6 @@ const About = () => {
               Southeast.
             </li>
           </ul>
-
-          <h2>What Our Customers Say</h2>
-          <div class="founders">
-            <div class="founder">
-              <img src="images/pasian.jpg" alt="Customer Review 1" />
-              <h3>Alicia M.</h3>
-              <p>
-                "Gear Hive’s tools helped me build my contracting business from
-                the ground up. Amazing quality and service!"
-              </p>
-            </div>
-            <div class="founder">
-              <img src="images/pblackwoman1.jpg" alt="Customer Review 2" />
-              <h3>Chris D.</h3>
-              <p>
-                "Their kits are perfect for apprentices. Gear Hive gets what
-                tradespeople actually need."
-              </p>
-            </div>
-            <div class="founder">
-              <img src="images/pwhite.jpg" alt="Customer Review 3" />
-              <h3>Sharon L.</h3>
-              <p>
-                "Quick delivery, great tools, and the customer support is
-                top-notch. Highly recommend."
-              </p>
-            </div>
-          </div>
-
-          <h2>Certifications & Awards</h2>
-          <ul>
-            <li>ISO 9001 Certified Manufacturing</li>
-            <li>EcoPack Sustainability Award 2028</li>
-            <li>Top Rated Industrial Tools by ToolPro Magazine</li>
-            <li>“Customer Favorite” Award - Southern Builders Council 2029</li>
-          </ul>
-
-          <blockquote
-            style={{
-              fontSize: "1.2rem",
-              fontStyle: "italic",
-              margin: "2rem 0",
-              textAlign: "center",
-            }}
-          >
-            "We don't just build tools — we build trust, reliability, and a
-            legacy of craftsmanship." – Gear Hive Founders
-          </blockquote>
-
-          <h2>Meet Our Founders</h2>
-          <div class="founders">
-            <div class="founder">
-              <img src="images/pasian.jpg" alt="John Smith" />
-              <h3>John Smith</h3>
-              <p>
-                John is a mechanical engineer with over 20 years of experience
-                in tool manufacturing. His vision for accessible, high-quality
-                tools drives Gear Hive's success.
-              </p>
-            </div>
-            <div class="founder">
-              <img src="images/pblackwoman1.jpg" alt="Jane Doe" />
-              <h3>Jane Doe</h3>
-              <p>
-                Jane is an industrial designer passionate about innovation. She
-                ensures our tools are ergonomic and efficient.
-              </p>
-            </div>
-            <div class="founder">
-              <img src="images/pwhite.jpg" alt="Mike Johnson" />
-              <h3>Mike Johnson</h3>
-              <p>
-                Mike, our business strategist, ensures Gear Hive continues to
-                expand while maintaining excellence in product quality and
-                service.
-              </p>
-            </div>
-          </div>
         </section>
       </main>
     </div>

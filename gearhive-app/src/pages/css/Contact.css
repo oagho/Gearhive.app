@@ -63,7 +63,6 @@
   margin: 2rem auto;
   max-width: 80%;
 }
-
 .form-container,
 .map-container {
   flex: 1 1 400px;
@@ -71,7 +70,7 @@
 }
 
 .form-container {
-  padding: 1rem;
+  padding: 2rem;
   background: white;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -99,11 +98,15 @@
 .social-icons img {
   width: 40px;
   height: 40px;
-  transition: transform 0.3s;
+  transition: transform 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .social-icons img:hover {
   transform: scale(1.1);
+}
+.social-icons img:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 @media (max-width: 768px) {
   .contact-section {
