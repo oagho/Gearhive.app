@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Gearhive.app/static/css/main.618ed770.css",
-    "main.js": "/Gearhive.app/static/js/main.9d673d24.js",
+    "main.css": "/Gearhive.app/static/css/main.eabe210a.css",
+    "main.js": "/Gearhive.app/static/js/main.5333d41c.js",
     "static/media/about-banner.jpg": "/Gearhive.app/static/media/about-banner.90d3133ab756a993ea68.jpg",
     "index.html": "/Gearhive.app/index.html",
-    "main.618ed770.css.map": "/Gearhive.app/static/css/main.618ed770.css.map",
-    "main.9d673d24.js.map": "/Gearhive.app/static/js/main.9d673d24.js.map"
+    "main.eabe210a.css.map": "/Gearhive.app/static/css/main.eabe210a.css.map",
+    "main.5333d41c.js.map": "/Gearhive.app/static/js/main.5333d41c.js.map"
   },
   "entrypoints": [
-    "static/css/main.618ed770.css",
-    "static/js/main.9d673d24.js"
+    "static/css/main.eabe210a.css",
+    "static/js/main.5333d41c.js"
   ]
 }
