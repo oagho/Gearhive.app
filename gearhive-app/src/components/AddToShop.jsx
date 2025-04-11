@@ -10,10 +10,13 @@ const AddToShop = ({ closeDialog, onProductAdded }) => {
     setResult("Sending...");
     const formData = new FormData(e.target);
 
-    const response = await fetch("http://localhost:3001/api/products", {
-      method: "POST",
-      body: formData,
-    });
+    const response = await fetch(
+      "https://gearhiveserver.onrender.com/api/products",
+      {
+        method: "POST",
+        body: formData,
+      }
+    );
 
     if (response.ok) {
       setResult("✅ Product added successfully.");
