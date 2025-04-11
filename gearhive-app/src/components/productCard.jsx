@@ -1,6 +1,6 @@
 const ProductCard = ({ product, addToCart }) => {
-  //const imageSrc = `http://localhost:3001/api/products${product.image}`;
-  const imageSrc = `http://localhost:3001${product.image}`; // ✅ correct path
+  const imageSrc = `https://gearhiveserver.onrender.com${product.image}`;
+  //const imageSrc = `http://localhost:3001${product.image}`; // ✅ correct path
 
   return (
     <div className="product">

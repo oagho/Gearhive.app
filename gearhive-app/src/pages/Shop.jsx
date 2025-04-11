@@ -9,7 +9,10 @@ const Shop = () => {
 
   const fetchProducts = async () => {
     try {
-      const response = await fetch("http://localhost:3001/api/products"); // change to localhost if testing
+      //const response = await fetch("http://localhost:3001/api/products"); // change to localhost if testing
+      const response = await fetch(
+        "https://gearhiveserver.onrender.com/api/products"
+      );
       const data = await response.json();
       if (Array.isArray(data.products)) {
         setProducts(data.products);
