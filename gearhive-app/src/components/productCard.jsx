@@ -4,7 +4,10 @@ const ProductCard = ({ product, addToCart }) => {
 
   return (
     <div className="product">
-      <img src={imageSrc} alt={product.name} />
+      <img
+        src={`https://gearhiveserver.onrender.com${product.image}`}
+        alt={product.name}
+      />
       <h3>{product.name}</h3>
       <p>
         ${typeof product.price === "number" ? product.price.toFixed(2) : "N/A"}
