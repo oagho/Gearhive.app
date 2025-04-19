@@ -5,3 +5,17 @@ footer {
   color: var(--header-text-color);
   margin-top: auto;
 }
+
+/* Admin link inside footer */
+.footer-link {
+  color: var(--header-text-color); /* match footer text */
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 8px;
+  transition: color 0.2s ease-in-out;
+}
+
+.footer-link:hover {
+  color: #ffd700; /* highlight on hover */
+  text-decoration: underline;
+}

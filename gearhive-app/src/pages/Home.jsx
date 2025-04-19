@@ -3,6 +3,7 @@ import Slideshow from "../components/Slideshow";
 import FeaturedProducts from "../components/FeaturedProducts";
 import ShopByIndustry from "../components/ShopByIndustry";
 import LatestUpdates from "../components/LatestUpdates";
+import { API_BASE } from "../config"; // ✅ Import base URL
 import "../pages/CSS/Home.css";
 
 const Home = () => {
@@ -11,7 +12,7 @@ const Home = () => {
       <main>
         <Slideshow interval={5000} />
         <FeaturedProducts
-          apiUrl="https://gearhiveserver.onrender.com/api/products"
+          apiUrl={`${API_BASE}/api/products`} // ✅ Uses dynamic environment
           numProducts={4}
         />
         <ShopByIndustry />

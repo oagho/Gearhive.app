@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ProductCard from "../components/productCard";
 import AddToShop from "../components/AddToShop";
+import { API_BASE } from "../config"; // ✅ auto-switch URL
 import "../pages/CSS/Shop.css";
 
 const Shop = () => {
@@ -9,10 +10,7 @@ const Shop = () => {
 
   const fetchProducts = async () => {
     try {
-      //const response = await fetch("http://localhost:3001/api/products"); // change to localhost if testing
-      const response = await fetch(
-        "https://gearhiveserver.onrender.com/api/products"
-      );
+      const response = await fetch(`${API_BASE}/api/products`);
       const data = await response.json();
       if (Array.isArray(data.products)) {
         setProducts(data.products);

@@ -1,13 +1,12 @@
+import React from "react";
+import { IMAGE_BASE } from "../config";
+
 const ProductCard = ({ product, addToCart }) => {
-  const imageSrc = `https://gearhiveserver.onrender.com${product.image}`;
-  //const imageSrc = `http://localhost:3001${product.image}`; // ✅ correct path
+  const imageSrc = `${IMAGE_BASE}${product.image}`;
 
   return (
     <div className="product">
-      <img
-        src={`https://gearhiveserver.onrender.com${product.image}`}
-        alt={product.name}
-      />
+      <img src={imageSrc} alt={product.name} />
       <h3>{product.name}</h3>
       <p>
         ${typeof product.price === "number" ? product.price.toFixed(2) : "N/A"}

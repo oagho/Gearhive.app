@@ -12,6 +12,7 @@ import Contact from "./pages/Contact";
 import Guide from "./pages/Guide";
 import Blog from "./pages/Blog";
 import Nopage from "./pages/Nopage";
+import Admin from "./pages/Admin";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="guide" element={<Guide />} />
           <Route path="blog" element={<Blog />} />
           <Route path="*" element={<Nopage />} />
+          <Route path="/admin" element={<Admin />} />
         </Route>
       </Routes>
     </BrowserRouter>
